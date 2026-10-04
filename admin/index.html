@@ -289,7 +289,7 @@ const demoEnquiries=[
 ];
 const demoSources=[["Google",1850,42,9],["Instagram",2600,31,4],["Direct",720,18,5],["Website",560,14,2],["WhatsApp",280,9,2]];
 const demoPages=[["Home",4120,2900,"01:42"],["Banquet Hall",3880,2440,"02:31"],["Rooms",2410,1640,"01:58"],["Events",1980,1360,"01:36"],["Gallery",1710,1210,"02:09"],["Contact",1320,980,"01:21"]];
-const demoCreatives=[["Wedding Hall Showcase",42000,2100,24,3],["Relatable Wedding Creative",31500,1760,18,2],["Reception Setup",28200,1230,12,2],["Venue Walkthrough",19800,880,9,1]];
+const demoCreatives=[["Wedding Hall Showcase",0,0,0,0],["Relatable Wedding Creative",0,0,0,0],["Reception Setup",0,0,0,0],["Venue Walkthrough",0,0,0,0]];
 const demoTopics=[["Banquet information",42],["Room information",26],["Wedding enquiry",23],["Location/contact",18],["Availability",12]];
 const charts={};
 
@@ -452,7 +452,7 @@ function renderBookings(){
   $("#upcoming").textContent="—";$("#weddingCount").textContent="—";$("#avgGuests").textContent="—";
 }
 function renderMarketing(){
-  $("#reach").textContent="1,29,500";$("#clicks").textContent="5,970";$("#leadCount").textContent="63";
+  $("#reach").textContent="0";$("#clicks").textContent="0";$("#leadCount").textContent="0";
   renderCampaign();
   $("#creativeBody").innerHTML=demoCreatives.map(x=>`<tr><td>${x[0]}</td><td>${fmt(x[1])}</td><td>${fmt(x[2])}</td><td>${fmt(x[3])}</td><td>${fmt(x[4])}</td></tr>`).join("");
 }
